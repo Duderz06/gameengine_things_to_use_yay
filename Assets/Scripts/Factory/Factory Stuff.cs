@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-public class Thingy1 : FactoryBase
+public class Thingy1 : FactoryBase, FactoryBase.IFactoryThing
 {
 
     public void Test1() => Debug.Log("test 1 thing 1");
@@ -11,7 +11,7 @@ public class Thingy1 : FactoryBase
 
 
 
-public class Thingy2 : FactoryBase
+public class Thingy2 : FactoryBase, FactoryBase.IFactoryThing
 {
 
     public void Test1() => Debug.Log("test 1 thing 2");
